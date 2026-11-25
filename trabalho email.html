@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículo — Claralis Monteiro Barros</title>
+  <!-- Bootstrap 5 via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    :root {
+      --cor-primaria: #2c3e50;
+      --cor-destaque: #2980b9;
+      --cor-fundo: #f8f9fa;
+      --cor-lateral: #1a252f;
+    }
+    body {
+      background-color: #eef2f5;
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    .sidebar {
+      background: linear-gradient(180deg, var(--cor-lateral) 0%, #243342 100%);
+      color: white;
+      min-height: 100vh;
+    }
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border: 5px solid rgba(255,255,255,0.2);
+    }
+    .sidebar h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    .sidebar .label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #95a5a6;
+    }
+    .sidebar a {
+      color: #85c1e9;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+    .section-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-left: 4px solid var(--cor-destaque);
+      transition: transform 0.2s ease;
+    }
+    .section-card:hover {
+      transform: translateY(-2px);
+    }
+    .section-title {
+      color: var(--cor-primaria);
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+    .skill-badge {
+      background-color: #eaf2f8;
+      color: #2471a3;
+      border-radius: 20px;
+      padding: 0.4rem 1rem;
+      display: inline-block;
+      margin: 0.25rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 767.98px) {
+      .sidebar {
+        min-height: auto;
+        padding-bottom: 2rem;
+      }
+      .profile-img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Barra Lateral -->
+      <aside class="col-md-4 col-lg-3 sidebar py-4 px-4">
+        <div class="text-center mb-4">
+          <img src="minha foto.jpeg" alt="Foto de Claralis" class="rounded-circle profile-img mb-3" />
+          <h2 class="h4 mb-1">Claralis Monteiro Barros</h2>
+          <p class="text-light-50 small">Estudante & Desenvolvedora Web</p>
+        </div>
+
+        <hr class="border-secondary my-3" />
+
+        <div class="mb-3">
+          <p class="label mb-1"><i class="bi-calendar-event me-2"></i> Idade</p>
+          <p class="mb-2">17 anos</p>
+        </div>
+
+        <div class="mb-3">
+          <p class="label mb-1"><i class="bi-geo-alt me-2"></i> Cidade</p>
+          <p class="mb-2">Itacarambi — MG</p>
+        </div>
+
+        <div class="mb-3">
+          <p class="label mb-1"><i class="bi-envelope me-2"></i> E-mail</p>
+          <a href="mailto:claralismonteirobarros@gmail.com" class="text-break">
+            claralismonteirobarros@gmail.com
+          </a>
+        </div>
+
+        <div class="mt-4">
+          <a href="https://www.instagram.com/_.claralis._" target="_blank" 
+             class="btn btn-outline-light w-100 d-flex align-items-center justify-content-center gap-2">
+            <i class="bi-instagram"></i> @_.claralis._
+          </a>
+        </div>
+      </aside>
+
+      <!-- Conteúdo Principal -->
+      <main class="col-md-8 col-lg-9 py-4 px-4 px-lg-5">
+        <header class="mb-5">
+          <h1 class="display-5 fw-bold text-dark mb-2">Currículo</h1>
+          <p class="text-muted fs-5">Perfil profissional e habilidades</p>
+        </header>
+
+        <!-- Objetivo -->
+        <section class="section-card p-4 mb-4">
+          <h3 class="h5 section-title mb-3">
+            <i class="bi-bullseye text-primary me-2"></i> Objetivo
+          </h3>
+          <p class="mb-0">
+            Busco uma oportunidade profissional para desenvolver minhas habilidades, adquirir experiência e contribuir com a empresa.
+          </p>
+        </section>
+
+        <!-- Formação -->
+        <section class="section-card p-4 mb-4">
+          <h3 class="h5 section-title mb-3">
+            <i class="bi-mortarboard text-primary me-2"></i> Formação
+          </h3>
+          <h4 class="h6 fw-bold mb-1">Curso Técnico em Manutenção e Suporte em Informática</h4>
+          <p class="text-muted mb-0">Instituto Federal do Norte de Minas Gerais — Januária</p>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="section-card p-4 mb-4">
+          <h3 class="h5 section-title mb-3">
+            <i class="bi-lightbulb text-primary me-2"></i> Habilidades
+          </h3>
+          <div>
+            <span class="skill-badge"><i class="bi-check-circle me-1"></i> Conhecimentos básicos em Informática</span>
+            <span class="skill-badge"><i class="bi-check-circle me-1"></i> HTML e Desenvolvimento Web</span>
+            <span class="skill-badge"><i class="bi-check-circle me-1"></i> Organização e Responsabilidade</span>
+            <span class="skill-badge"><i class="bi-check-circle me-1"></i> Dedicação e aprendizado contínuo</span>
+            <span class="skill-badge"><i class="bi-check-circle me-1"></i> Proatividade</span>
+            <span class="skill-badge"><i class="bi-check-circle me-1"></i> Trabalho em Equipe</span>
+            <span class="skill-badge"><i class="bi-check-circle me-1"></i> Boa Comunicação</span>
+          </div>
+        </section>
+
+        <!-- Redes Sociais -->
+        <section class="section-card p-4">
+          <h3 class="h5 section-title mb-3">
+            <i class="bi-share text-primary me-2"></i> Contato / Rede Social
+          </h3>
+          <p class="mb-0">
+            Acompanhe meu perfil no Instagram:
+            <a href="https://www.instagram.com/_.claralis._" target="_blank" class="btn btn-sm btn-primary ms-2">
+              <i class="bi-instagram me-1"></i> _.claralis._
+            </a>
+          </p>
+        </section>
+
+        <footer class="mt-5 text-center text-muted small">
+          <p>© 2026 — Currículo desenvolvido com Bootstrap 5</p>
+        </footer>
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
